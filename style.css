@@ -351,13 +351,12 @@ main{
                 overflow-x: scroll;
                 border-radius: 0 0 16px 16px;
                 .item-a{
-                    width: 4.5vh;
+                    width: 4.4vh;
                     word-wrap: break-word;
                     text-align: center;
                     background-color: var(--neutral-color);
                     padding: 1vh;
                     align-content: center;
-                    height: max-content;
                 }
                 items{
                     gap:0.5vh;
