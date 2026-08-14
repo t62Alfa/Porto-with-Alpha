@@ -239,7 +239,7 @@ main{
                         width:10vh;
                         object-fit: cover;
                     }
-                    .inf-prof-box{
+                    .inf-proj-box{
                         width: 100%;
                         gap: 0.5vh;
                         display: flex;
@@ -267,7 +267,7 @@ main{
                                 padding: 0.2vh;
                                 background-color: var(--secondary-color);
                             }
-                            .main-prof-box{
+                            .main-proj-box{
                                 display: flex;
                                 flex-direction: column;
                                 width: 100%;
@@ -278,7 +278,7 @@ main{
                                 #date{
                                     font-size: small;
                                 }
-                                .main-prof{
+                                .main-proj{
                                     display: flex;
                                     flex-direction: row;
                                     gap: 0.2vh;
