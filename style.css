@@ -4,10 +4,12 @@
     --secondary-color: rgb(35, 59, 100);
     --tertiary-color: black;
     --four-color:whitesmoke;
-    --primary-font: 'Arial', sans-serif;
+    --primary-font: Serif;
     --pick-color: pink;
     --blur-color: rgba(255, 192, 203, 0.247);
     --neon-color: rgba(253, 205, 213, 0.486);
+    --back-color: rgba(0, 0, 0, 0.272);
+    --neutral-color: #d9d9d9;
 }
 
 
@@ -207,4 +209,180 @@ main{
     background: var(--secondary-color);
     width:100%;
     min-height: 90vh;
+    .page-box-a{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        .project-box{
+            margin: 5vh;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            overflow-x: scroll;
+            height: 30vh;
+            background-color: #b5b2b2;
+            projects{
+                max-width: 60vh;
+                display: flex;
+                flex-direction: column;
+                background-color: var(--neutral-color);
+                .headline-proj{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 2vh;
+                    padding-left: 0;
+                    gap: 1vh;
+                    padding-bottom: 1vh;
+                    img{
+                        width:10vh;
+                        object-fit: cover;
+                    }
+                    .inf-prof-box{
+                        width: 100%;
+                        gap: 0.5vh;
+                        display: flex;
+                        flex-direction: column;
+                        .name-id{
+                            display: flex;
+                            justify-content: space-between;
+                            h2{
+                                font-weight: 540;
+                                width: 100%;
+                                word-wrap: break-word;
+                                font-size: xx-large;
+                                color: var(--secondary-color);
+                            }
+                            p{
+                                font-weight: 400;
+                                font-size: x-large;
+                            }
+                        }
+                        .line{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 0.3vh;
+                            line{
+                                padding: 0.2vh;
+                                background-color: var(--secondary-color);
+                            }
+                            .main-prof-box{
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                word-wrap: break-word;
+                                *{
+                                    font-size: medium;
+                                }
+                                #date{
+                                    font-size: small;
+                                }
+                                .main-prof{
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 0.2vh;
+                                    .isi{
+                                        display: flex;
+                                        flex-direction: column;
+                                        font-weight: lighter;
+                                        #category{
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                describe{
+                    font-size: small;
+                    max-height: 12vh;
+                    overflow-x: scroll;
+                    margin-left: 1vh;
+                }
+            }
+        }
+        .histo-afi-box{
+            max-width: 100vh;
+            display: flex;
+            margin-left: 6%;
+            flex-direction: column;
+            .histo-mark{
+                display: flex;
+                height: 30vh;
+                histo{
+                    margin-top: 5vh;
+                }
+                .mark{
+                    padding:5vh;
+                    height: 6vh;
+                    margin-left:3vh;
+                }
+            }
+        }
+    }
+    .page-box-b{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: left;
+        align-items: center;
+        margin-left: 5%;
+        gap: 2%;
+        dependensi{
+            display: flex;
+            height: 17vh;
+            gap: 0.5vh;
+            flex-direction: column;
+            text-align: center;
+            text-transform: uppercase;
+            h3{
+                padding: 1vh;
+                background-color: var(--back-color);
+                border-radius: 8px 8px 0 0;
+                color: var(--secondary-color);
+            }
+            .dep-items{
+                display: flex;
+                flex-direction: row;
+                gap: 0.3vh;
+                overflow-x: scroll;
+                border-radius: 0 0 16px 16px;
+                .item-a{
+                    width: 4.5vh;
+                    word-wrap: break-word;
+                    text-align: center;
+                    background-color: var(--neutral-color);
+                    padding: 1vh;
+                    align-content: center;
+                    height: max-content;
+                }
+                items{
+                    gap:0.5vh;
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    .sum{
+                        height: 100%;
+                        font-size: xxx-large;
+                        text-align: center;
+                        align-content: center;
+                        width: 100%;
+                        font-weight: 500;
+                        background-color: var(--neutral-color);
+                    }
+                    .item-b{
+                        text-align: center;
+                        color:var(--secondary-color);
+                        background-color: var(--neutral-color);
+                        font-size: x-large;
+                        font-weight: 520;
+                        padding: 1vh;
+                    }
+                }
+            }
+        }
+    }
 }
