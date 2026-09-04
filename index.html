@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio</title>
+    <style>
+        :root{
+            --debug-color: #ff00ff;
+            --primary-color: white;
+            --secondary-color: rgb(35, 59, 100);
+            --tertiary-color: black;
+            --four-color:whitesmoke;
+            --primary-font: Serif;
+            --pick-color: pink;
+            --blur-color: rgba(255, 192, 203, 0.247);
+            --neon-color: rgba(253, 205, 213, 0.486);
+            --back-color: rgba(0, 0, 0, 0.272);
+            --neutral-color: #d9d9d9;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +29,7 @@
             <nav class="navbar">
                 <li><a href="" class="head">Home</a></li>
                 <li>/</li>
-                <li><a href="">Projects</a></li>
+                <li><a href="#pin-title">Projects</a></li>
                 <li><a href="">History</a></li>
                 <li><a href="">Dependensi</a></li>
                 <li><a href="">Afilead</a></li>
@@ -26,20 +41,20 @@
             </div>
         </div>
         <section class="hero">
-            <div class="title-profile">
+            <div class="title-profile" id="title-profile">
                 <p id="title-name" class="title1">John Doe</p>
                 <p id="title-name" class="title2">Jhone Doe</p>
                 <p id="title-name" class="title3">Jhone Doe</p>
             </div>
             <section class="three-box">
                 <div class="author-info"><p id="author-name">by Author</p></div>
-                <div class="profile-characters">
-                    <img src="assets/images/profile-character.png" alt="Profile Picture Character" id="profile-picture-character" class="profile-character">
-                    <img src="assets/images/profile-character.png" alt="Profile Picture Character Blur" id="profile-picture-character" class="profile-character-blur">
-                </div>
                 <div class="profile-info">
                     <p id="profile-job">Job</p>
                     <p id="profile-job-description">Job Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit dignissimos quae, in dolore, aspernatur labore quasi ex eum culpa. Molestias eum harum debitis nobis officia sapiente totam officiis.</p>
+                </div>
+                <div class="profile-characters" id="profile-characters">
+                    <img src="assets/images/profile-character.png" alt="Profile Picture Character" id="profile-picture-character" class="profile-character">
+                    <img src="assets/images/profile-character.png" alt="Profile Picture Character Blur" id="profile-picture-character" class="profile-character-blur">
                 </div>
             </section>
         </section>
@@ -47,125 +62,82 @@
 
     <!--MAIN-->
     <main>
-        <section class="page-box-a">
-            <div class="project-box">
-                <projects >
-                    <div class="headline-proj">
-                        <img src="/assets/images/images-bg.png" alt="">
-                        <div class="inf-proj-box">
-                            <div class="name-id">
-                                <h2>Dummy-A</h2>
-                                <p>01</p>
-                            </div>
-                            <div class="line">
-                                <line></line>
-                                <div class="main-proj-box">
-                                    <p id="date">20-06-2013</p>
-                                    <div class="main-proj">
-                                        <line></line>
-                                        <div class="isi">
-                                            <p id="pt-project">PT. Nusantara Digital</p>
-                                            <p><span id="author-0">Jhone Doe</span> - <span id="author-1">t62Alfa</span></p>
-                                            <p id="category">Teknologi Basis-Data</p>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <describe class="describe-project">
-                        <article id="describe">
-                            Lorem ipsum dolor sit, amet Lorem ipsum dolor, sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor eaque laudantium laboriosam optio, nam totam quidem consequuntur expedita, animi fugiat esse, distinctio qui Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia aut accusantium sit, laborum corrupti omnis fugit explicabo in rerum! Atque quod numquam commodi praesentium dolore magnam deleniti repellat asperiores. quaerat commodi sit nesciunt! Exercitationem, sint! Nostrum? consectetur adipisicing elit. Blanditiis cum delectus corporis saepe temporibus sunt iusto architecto id harum error. Nesciunt praesentium expedita magnam saepe mollitia nostrum consectetur aut nulla! consectetur adipisicing elit. Eos, facere tempora! Laboriosam praesentium, sapiente neque officiis ad voluptatem quod earum nihil perferendis quia assumenda deleniti quasi blanditiis nulla accusantium vero.
-                        </article>
-                    </describe>
-                </projects>
-                <projects >
-                    <div class="headline-proj">
-                        <img src="/assets/images/images-bg.png" alt="">
-                        <div class="inf-proj-box">
-                            <div class="name-id">
-                                <h2>Dummy-A</h2>
-                                <p>01</p>
-                            </div>
-                            <div class="line">
-                                <line></line>
-                                <div class="main-proj-box">
-                                    <p id="date">20-06-2013</p>
-                                    <div class="main-proj">
-                                        <line></line>
-                                        <div class="isi">
-                                            <p id="pt-project">PT. Nusantara Digital</p>
-                                            <p><span id="author-0">Jhone Doe</span> - <span id="author-1">t62Alfa</span></p>
-                                            <p id="category">Teknologi Basis-Data</p>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <describe class="describe-project">
-                        <article id="describe">
-                            Lorem ipsum dolor sit, amet Lorem ipsum dolor, sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor eaque laudantium laboriosam optio, nam totam quidem consequuntur expedita, animi fugiat esse, distinctio qui Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia aut accusantium sit, laborum corrupti omnis fugit explicabo in rerum! Atque quod numquam commodi praesentium dolore magnam deleniti repellat asperiores. quaerat commodi sit nesciunt! Exercitationem, sint! Nostrum? consectetur adipisicing elit. Blanditiis cum delectus corporis saepe temporibus sunt iusto architecto id harum error. Nesciunt praesentium expedita magnam saepe mollitia nostrum consectetur aut nulla! consectetur adipisicing elit. Eos, facere tempora! Laboriosam praesentium, sapiente neque officiis ad voluptatem quod earum nihil perferendis quia assumenda deleniti quasi blanditiis nulla accusantium vero.
-                        </article>
-                    </describe>
-                </projects>
+        <div class="page-a">
+            <div class="job-flex" id="jobs">
+                <div>
+                    <h1 id="jobs-title">Jobs</h1>
+                    <p id="jobs-describe"><i>Olla</i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ducimus nihil dignissimos ipsum quia omnis provident deleniti error dolorem rem neque repudiandae vitae modi praesentium sed quisquam, perspiciatis blanditiis quam?</p>
+                </div>
             </div>
-            
-            <div class="histo-afi-box">
-                <div class="histo-mark">
-                    <histo>
-                        <h2>History</h2>
-                        <describe class="describe-history">
+            <div class="pin-title" id="pin-title"><h1>PINNED</h1><span>PROJECTS</span></div>
+            <section class="pined-proj" id="pinned_p">
+                <div class="pinned-card">
+                    <img src="assets/images/images-bg.png" alt="" class="proj-img">
+                    <div class="proj-inf">
+                        <h1 id="judul">Trslsls yeyeye Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur, dolor magnam quas similique consectetur natus sequi voluptatem nam ab recusandae. Rerum quam nesciunt necessitatibus a quia enim laboriosam dolorem.</h1>
+                        <span id="sub-judul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quae minima eveniet velit vero nulla soluta, officiis autem sunt. Cumque cum dignissimos non dolorem! Autem alias ea a asperiores maxime.</span>
+                        <ol class="category" id="kategori">
+                            <li>Teknologi</li>
+                            <li>Agrikultur</li>
+                            <li>FnB</li>
+                            <li>Kesehatan</li>
+                            <li>Hukum</li>
+                            <li>Edukasi</li>
+                        </ol>
+                        <div class="describe">
                             <line></line>
-                            <article>l Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis illum eos harum nesciunt ab aperiam ipsam. Aliquid ipsum, sint recusandae deserunt fugit aliquam eum sequi lorem assumenda quibusdam molestias quaerat atque!</article>
-                        </describe>
-                    </histo>
-                    <div class="mark"></div>
-                </div>
-                <afi>
-                    <h2>Terafiliasi</h2>
-                    <p>V</p>
-                </afi>
-            </div>
-        </section>
-        <section class="page-box-b">
-            <dependensi>
-                <h3>Dependensi</h3>
-                <div class="dep-items">
-                    <item class="item-a">Javascript</item>
-                    <items>
-                        <item class="sum" id="sum-total">02</item>
-                        <item class="item-b">Python</item>
-                    </items>
-                </div>
-            </dependensi>
-            <afilead>
-                <div class="afi-prof">
-                    <div class="headline-afil">
-                        <h2 id="afiliasi-name">Poltek Indonusa</h2>
-                        <div class="from">
-                            <hr>
-                            <h4>Surakarta</h4>
+                            <article id="deskripsi">
+                                lorem Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dolor architecto! Dicta libero, unde similique minima perferendis illo, reiciendis placeat explicabo facilis ratione porro ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolore doloribus, veritatis ad, perferendis laborum dicta est tempora atque adipisci unde sunt dolor suscipit et, sit error numquam iure officiis. praesentium obcaecati. Voluptate, nisi. Facilis. sit amet consectetur adipisicing elit. Velit, architecto dicta qui molestias nemo nostrum vitae tenetur explicabo? Cum aliquam explicabo quam ex recusandae praesentium saepe. Ut eaque quas blanditiis.
+                            </article>
                         </div>
                     </div>
-                    <describe>
-                        <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nostrum aut sapiente aperiam porro asperiores fuga iste eligendi, hic dolore facere quas. Qui deleniti, ut necessitatibus quibusdam cumque consectetur maxime.</article>
-                        <line class="line-b"></line>
-                    </describe>
                 </div>
-                <img src="/assets/images/profile-picture.png" alt="">
-            </afilead>
-        </section>
-        <section>
-            <div class="line-inf">line</div>
-            <div class="profile-characters">
-                <img src="assets/images/profile-character.png" alt="Profile Picture Character" id="profile-picture-character" class="profile-character">
-                <img src="assets/images/profile-character.png" alt="Profile Picture Character Blur" id="profile-picture-character" class="profile-character-blur">
+            </section>
+            <div class="proj-box">
+                <div class="nav-proj">
+                    <button type="button" onclick="back()"><-</button>
+                    <div class="content-title">
+                        <h1>Projects</h1>
+                        <span>More</span>
+                    </div>
+                    <button type="button" onclick="next()">-></button>
+                </div>
+                <div class="card-box" id="cards">
+                    <!--INI SEMENTARA-->
+                </div>
             </div>
-        </section>
+            <div class="depen-box">
+                <div class="depen-dec">
+                    <line></line>
+                    <div class="title">
+                        <h1>Dependensi</h1>
+                        <p id="paraf-depen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse praesentium, dolorum rem dolor voluptate nihil nobis necessitatibus cum repellendus tempora minima natus magnam harum quod eligendi officia beatae excepturi?</p>
+                    </div>
+                </div>
+                <div class="cards" id="depen">
+                    <button>Python</button>
+                    <button>Java</button>
+                    <button>Html</button>
+                </div>
+                <div class="describe-card" >
+                    <div class="depen-dec">
+                        <line id="line"></line>
+                        <div class="title">
+                            <h1 id="clas-depen">Python</h1>
+                        </div>
+                    </div>
+                    <article id="desc-depen">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis vel exercitationem officiis cupiditate consectetur est, unde amet voluptate iure quia impedit rerum blanditiis esse veritatis iste minima, eius enim! <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita atque adipisci beatae voluptas. Minus voluptatibus maxime nobis aspernatur unde, porro ad quas esse vitae, provident velit culpa impedit rem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae a porro eligendi itaque sed! Est obcaecati, voluptatibus amet accusantium vel expedita. Optio, nulla fugiat. Cum nam facere saepe eius odit!
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="page-b">
+            
+        </div>
     </main>
-    
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
